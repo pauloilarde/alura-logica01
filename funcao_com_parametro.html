@@ -1,0 +1,40 @@
+<meta charset="utf">
+
+<script>
+
+   // a ideia nesse programa é substituir o document.write por uma função
+   // essa função será chamada "escreve()"
+   function pulaLinha(){
+      document.write("<br>");
+   }
+
+   function escreve(texto){
+      document.write(texto);
+      pulaLinha();
+   }
+
+   var ano = 2017;
+   //document.write("Paulo tem " + (ano - 1990) + " anos");
+   escreve("Paulo tem " + (ano - 1990) + " anos");
+   //pulaLinha();
+   // essa função aqui em cima não precisa mais estar aqui
+   // ela é chamada dentro da função escreve();
+
+   //document.write("Jon Snow tem " + (ano - 1987) + " anos");
+   escreve("Jon Snow tem " + (ano - 1987) + " anos");
+   //pulaLinha();
+   // essa função aqui em cima não precisa mais estar aqui
+   // ela é chamada dentro da função escreve();
+
+   //document.write("Tim Burton tem " + (ano - 1962) + " anos");
+   escreve("Tim Burton tem " + (ano - 1962) + " anos");
+   //pulaLinha();
+   // essa função aqui em cima não precisa mais estar aqui
+   // ela é chamada dentro da função escreve();
+
+   var idadePaulo = 27;
+   var idadeJon = 30;
+   var idadeTim = 55;
+   var media = (idadePaulo + idadeJon + idadeTim) / 3;
+   escreve("A média das 3 idades é: " + Math.round(media));
+</script>

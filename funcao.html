@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+
+<script>
+   // programa pra iniciar o uso de funções
+   // em vez de usar o document.write("<br>"),
+   // será utilizada uma função chamada pulaLinha
+
+   function pulaLinha(){
+      document.write("<br>");
+   }
+
+   var ano = 2017;
+   document.write("Paulo tem " + (ano - 1990) + " anos");
+   pulaLinha();
+   document.write("Jon Snow tem " + (ano - 1987) + " anos");
+   pulaLinha();
+   document.write("Tim Burton tem " + (ano - 1962) + " anos");
+   pulaLinha();
+
+   var idadePaulo = 27;
+   var idadeJon = 30;
+   var idadeTim = 55;
+   var media = (idadePaulo + idadeJon + idadeTim) / 3;
+   document.write("A média das 3 idades é: " + Math.round(media));
+</script>
