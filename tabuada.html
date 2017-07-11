@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+
+<script>
+
+   function pulaLinha(){
+      document.write("<br>");
+   }
+
+   function escreve(texto){
+      document.write(texto);
+      pulaLinha();
+   }
+
+   var multiplicador = 1;
+
+   while(multiplicador < 11){
+      escreve(7 * multiplicador);
+      multiplicador++;
+   }
+   escreve("Fim");
+</script>
