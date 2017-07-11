@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function escreve(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var idade = parseInt(prompt("Qual é sua idade"));
+
+
+    if (idade > 17 ){
+      var temCarteira = prompt("Tem carteira? Responda S ou N");
+
+      if(temCarteira == "S" || temCarteira == "s"){
+         escreve("Pode dirigir! Parabéns!");
+      } else{
+         escreve("Você já pode se matricular pra tirar habilitação!");
+      }
+   } else {
+      escreve("Você ainda não tem idade de tirar habilitação :/");
+      escreve("Tenha paciência, logo você terá idade!");
+   }
+
+</script>

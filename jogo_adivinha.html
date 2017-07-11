@@ -11,15 +11,22 @@
       pulaLinha();
    }
 
-   var numeroPensado = Math.round(Math.random() * 10);
+   function sorteia(numero){
+     return Math.round(Math.random() * numero);
+  }
+
+   var numeroPensado = sorteia(100);
    console.log(numeroPensado);
    var chute = parseInt(prompt("Informe um número pra tentar adivinhar o número pensado:"));
 
    if(chute == numeroPensado){
       escreve("Parabéns, vc acertou!");
    } else {
-      escreve("Você errou :/ ");
-      escreve("O número pensado foi: " + numeroPensado);
+      if (chute < numeroPensado){
+         escreve("Seu chute foi menor que o número pensado!");
+      } else{
+         escreve("Seu chute foi manior que o número pensado!");
+      }
    }
 
 </script>
