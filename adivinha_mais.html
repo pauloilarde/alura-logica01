@@ -5,14 +5,21 @@
 
 <script>
 
-   var segredo = 5;
+   var segredo = Math.round(Math.random() * 10);
    var input = document.querySelector("input");
+   input.focus();
 
-   if(input.value == segredo){
-      alert("Você acertou!");
-   } else{
-      alert("Você errou!");
+   function verifica(){
+      if(input.value == segredo){
+         alert("Você acertou!");
+      } else{
+         alert("Você errou!");
+      }
+      input.value = "";
+      input.focus();
    }
-   // ainda falta mais coisas pra completar o código
-   // tive que interromper
+
+   var button = document.querySelector("button");
+
+   button.onclick = verifica;
 </script>
